@@ -1,7 +1,9 @@
-# ALMAMPlayer
+# ALMAMPlayer Fish
 
-a midi visualizer made with godot 4.1.1
+[ALMAMPlayer](https://github.com/almam72/ALMAMPlayer) をベースに開発した MIDI ビジュアライザです。
 
-theres some really dumb stuff in the code sorry about that
+Godot 4.6 を使用して制作されました。
 
-big thanks to arlez80 for writing the midi parser
+MIDIパーサーを作成してくれた [arlez80様](https://arlez80.net/) に心より感謝申し上げます。
+
+不具合報告は [GitHub Issues](https://github.com/icysamon/almam-player/issues) に書いてください。
