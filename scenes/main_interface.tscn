@@ -75,25 +75,25 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
-text = "New config"
+text = "KEY_NEW_CONFIG"
 
 [node name="LoadConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=423917229]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
-text = "Load config"
+text = "KEY_LOAD_CONFIG"
 
 [node name="SaveConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=1078963601]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
-text = "Save config"
+text = "KEY_SAVE_CONFIG"
 
 [node name="SaveAsConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=92890089]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
-text = "Save as..."
+text = "KEY_SAVE_AS"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=1481907148]
 layout_mode = 2
@@ -178,14 +178,14 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 32
-text = "Reset Colors"
+text = "KEY_RESET_COLORS"
 
 [node name="ResetParallaxButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer/HBoxContainer" unique_id=1066810770]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 32
-text = "Reset Parallax"
+text = "KEY_RESET_PARALLAZX"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer" unique_id=1535645203]
 layout_mode = 2
@@ -195,14 +195,14 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 32
-text = "Reset Texture"
+text = "KEY_RESET_TEXTURE"
 
 [node name="ResetNoteEffectTextureButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer/HBoxContainer2" unique_id=1347754815]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 32
-text = " Reset \"note on\""
+text = "KEY_RESET_NOTEON"
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer" unique_id=969956576]
 layout_mode = 2
@@ -277,7 +277,7 @@ modulate = Color(0.423529, 0, 0.0980392, 1)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
-text = "Speed/Zoom"
+text = "KEY_SPEED"
 
 [node name="SpeedSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/SpeedSliderContainer" unique_id=20915922]
 unique_name_in_owner = true
@@ -391,19 +391,19 @@ fit_content = true
 layout_mode = 2
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 34
-text = "Preview Video"
+text = "KEY_PREVIEW_VIDIO"
 
 [node name="ExportButton2" type="Button" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=732652287]
 layout_mode = 2
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 34
-text = "Export Video"
+text = "KEY_EXPORT_VIDIO"
 
 [node name="ResetPreviewButton" type="Button" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1478164578]
 layout_mode = 2
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 25
-text = "Reset Live Preview"
+text = "KEY_RESET_PREVIEW"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=527296240]
 layout_mode = 2
@@ -476,11 +476,7 @@ offset_right = 428.0
 offset_bottom = 449.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 27
-text = "drag a .mid and a .mp3 file here !
-you can also add a background image
-if a track is above another one in the list it will get drawn in front of it
-
-created by almam:)"
+text = "KEY_DESCRIPTION"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/Control" unique_id=1747114580]
 layout_mode = 0

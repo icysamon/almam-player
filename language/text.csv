@@ -1,0 +1,21 @@
+KEYS,en,ja
+KEY_SPEED,Speed/Zoom,拡大/縮小
+KEY_DESCRIPTION,"drag a .mid and a .mp3 file here !
+you can also add a background image
+if a track is above another one in the list it will get drawn in front of it
+
+created by almam:)",".mid と .mp3 ファイルをここにどらぐしてください！
+こうして背景を追加することもできる
+if a track is above another one in the list it will get drawn in front of it"
+KEY_PREVIEW_VIDIO,"Preview Video","プレビュー"
+KEY_EXPORT_VIDIO,"Export Video","エクスポート"
+KEY_RESET_PREVIEW,"Reset Live Preview","プレビューをリセット"
+KEY_NEW_CONFIG,"New Config","新規設定"
+KEY_LOAD_CONFIG,"Load Config","設定を読み込む"
+KEY_SAVE_CONFIG,"Save Config","設定を保存"
+KEY_SAVE_AS,"Save as...","名前を付けて保存"
+KEY_RESET_COLORS,"Reset Colors","カーラーをリセット"
+KEY_RESET_PARALLAZX,"Reset Parallax","Parallaxをリセット"
+KEY_RESET_PARALLAZX,"Reset Parallax","Parallaxをリセット"
+KEY_RESET_TEXTURE,"Reset Texture","テクスチャーをリセット"
+KEY_RESET_NOTEON,"Reset "note on"",""note on"をリセット"
