@@ -514,6 +514,7 @@ autostart = true
 
 [node name="SetAllNotesTextureFileDialog" type="FileDialog" parent="." unique_id=1159226955]
 unique_name_in_owner = true
+oversampling_override = 1.0
 title = "Open a File"
 initial_position = 2
 size = Vector2i(1200, 675)
@@ -521,9 +522,11 @@ ok_button_text = "Open"
 file_mode = 0
 access = 2
 filters = PackedStringArray("*.png")
+use_native_dialog = true
 
 [node name="SetAllEffectsTextureFileDialog" type="FileDialog" parent="." unique_id=1055224261]
 unique_name_in_owner = true
+oversampling_override = 1.0
 title = "Open a File"
 initial_position = 2
 size = Vector2i(1200, 675)
@@ -531,6 +534,7 @@ ok_button_text = "Open"
 file_mode = 0
 access = 2
 filters = PackedStringArray("*.png")
+use_native_dialog = true
 
 [node name="ExportVideo" type="FileDialog" parent="." unique_id=675531568]
 unique_name_in_owner = true
@@ -538,6 +542,7 @@ initial_position = 2
 size = Vector2i(1200, 675)
 access = 2
 filters = PackedStringArray("*.avi")
+use_native_dialog = true
 
 [node name="SaveBeforeNewDialog" type="ConfirmationDialog" parent="." unique_id=1086183324]
 unique_name_in_owner = true
@@ -562,6 +567,7 @@ initial_position = 2
 size = Vector2i(1200, 675)
 access = 2
 filters = PackedStringArray("*.json")
+use_native_dialog = true
 
 [node name="CreateNewConfig" type="FileDialog" parent="." unique_id=1938878364]
 unique_name_in_owner = true
@@ -570,6 +576,7 @@ initial_position = 2
 size = Vector2i(1200, 675)
 access = 2
 filters = PackedStringArray("*.json")
+use_native_dialog = true
 
 [node name="LoadSongFileDialog" type="FileDialog" parent="." unique_id=1387753520]
 unique_name_in_owner = true
@@ -579,6 +586,7 @@ size = Vector2i(1200, 675)
 ok_button_text = "Open"
 file_mode = 1
 access = 2
+use_native_dialog = true
 
 [node name="LoadConfigDialog" type="FileDialog" parent="." unique_id=617992261]
 unique_name_in_owner = true
@@ -589,6 +597,7 @@ ok_button_text = "Open"
 file_mode = 0
 access = 2
 filters = PackedStringArray("*.json")
+use_native_dialog = true
 
 [connection signal="pressed" from="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5/NewConfigButton" to="." method="_on_new_config_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5/LoadConfigButton" to="." method="_on_load_config_button_pressed"]
