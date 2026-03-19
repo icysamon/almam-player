@@ -102,13 +102,13 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "Set All Notes' Texture"
+text = "KEY_NOTE_TEXTURE"
 
 [node name="EffectTextureButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer2" unique_id=1321402409]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "Set All \"note on\" Textures"
+text = "KEY_NOTE_ON_TEXTURE"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=319285805]
 layout_mode = 2
@@ -123,7 +123,7 @@ value = 11.0
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "Set Notes' Left Margin"
+text = "KEY_NOTE_LEFT_MARGIN"
 
 [node name="RightMarginSlider" type="HSlider" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer3" unique_id=1969255879]
 layout_mode = 2
@@ -135,7 +135,7 @@ value = 11.0
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "Set Notes' Right Margin"
+text = "KEY_NOTE_RIGHT_MARGIN"
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=2035209208]
 layout_mode = 2
@@ -145,7 +145,7 @@ modulate = Color(0.666667, 0.329412, 0.384314, 1)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 28
-text = "note length preview"
+text = "KEY_NOTE_LENGTH_PREVIEW"
 
 [node name="NoteLengthSlider" type="HSlider" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer4" unique_id=321560945]
 layout_mode = 2
@@ -240,7 +240,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 34
-text = "Play"
+text = "KEY_PLAY"
 
 [node name="SeekTime" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/LivePreviewInterface/HBoxContainer" unique_id=1525085261]
 layout_mode = 2
@@ -330,7 +330,7 @@ modulate = Color(0.423529, 0, 0.0980392, 1)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
-text = "Top Margin"
+text = "KEY_TOP_MARGIN"
 
 [node name="TopMarginSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TopMarginSliderContainer" unique_id=38123716]
 unique_name_in_owner = true
@@ -346,7 +346,7 @@ modulate = Color(0.423529, 0, 0.0980392, 1)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
-text = "Bottom Margin"
+text = "KEY_BOTTOM_MARGIN"
 
 [node name="VerticalOffsetSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VerticalOffsetSliderContainer" unique_id=922893658]
 unique_name_in_owner = true
@@ -363,7 +363,7 @@ modulate = Color(0.423529, 0, 0.0980392, 1)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
-text = "Offset Audio"
+text = "KEY_OFFSET_AUDIO"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/AudioOffsetContainer" unique_id=230416555]
 layout_mode = 2
@@ -384,7 +384,7 @@ custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 28
-text = "seconds"
+text = "KEY_SECONDS"
 fit_content = true
 
 [node name="PreviewButton" type="Button" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=884125282]
@@ -431,7 +431,7 @@ modulate = Color(0.423529, 0, 0.0980392, 1)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
-text = "Velocity force"
+text = "KEY_VELOCITY_FORCE"
 
 [node name="VelocitySlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/VelocitySliderContainer" unique_id=306166353]
 unique_name_in_owner = true
@@ -448,7 +448,7 @@ modulate = Color(0.423529, 0, 0.0980392, 1)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
-text = "Pitch bend lvl"
+text = "KEY_PITCH_BEND_LVL"
 
 [node name="PitchBendSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/PitchBendSliderContainer" unique_id=664152250]
 unique_name_in_owner = true
@@ -461,7 +461,7 @@ value = 0.5
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 27
-text = "^ if u dont want any velocity/pitch bend visualization set these all the way to the left"
+text = "KEY_VELOCITY_PITCH_DESCRIPTION"
 fit_content = true
 
 [node name="Control" type="Control" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1186003799]
