@@ -191,6 +191,13 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_86ohj"]
+bg_color = Color(0.9843137, 0.73333335, 0.34901962, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_03b4d"]
 bg_color = Color(0.964844, 0.964844, 0.964844, 1)
 
@@ -275,7 +282,6 @@ corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
 [resource]
-AcceptDialog/font_sizes/title_font_size = 16
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_focus_color = Color(0.172549, 0.172549, 0.172549, 1)
 Button/colors/font_hover_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
@@ -298,12 +304,14 @@ HSlider/icons/grabber = ExtResource("1_ob0s7")
 HSlider/icons/grabber_highlight = ExtResource("2_jyppk")
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_r8rnw")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_ev4rt")
-Label/font_sizes/font_size = 24
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/font_sizes/font_size = 22
 LineEdit/styles/focus = SubResource("StyleBoxFlat_8q28a")
 LineEdit/styles/normal = SubResource("StyleBoxFlat_oa882")
-OptionButton/font_sizes/font_size = 16
+OptionButton/font_sizes/font_size = 24
+PopupMenu/colors/font_color = Color(0, 0, 0, 1)
+PopupMenu/font_sizes/font_size = 24
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_86ohj")
 TabContainer/styles/panel = SubResource("StyleBoxFlat_03b4d")
 TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_4r3bj")
 TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_4jlw2")

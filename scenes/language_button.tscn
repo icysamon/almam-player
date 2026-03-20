@@ -7,7 +7,8 @@ script = ExtResource("1_hix1u")
 
 [node name="Label" type="Label" parent="." unique_id=1075358672]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.5946399, 0.26251468, 0.48276794, 1)
+theme_override_colors/font_color = Color(0.8746934, 0.58086306, 0.76105607, 1)
+theme_override_font_sizes/font_size = 36
 text = "KEY_LANGUAGE"
 
 [node name="OptionButton" type="OptionButton" parent="." unique_id=1281892435]

@@ -564,7 +564,6 @@ oversampling_override = 1.0
 title = "KEY_CONFIRM"
 initial_position = 2
 size = Vector2i(399, 100)
-visible = true
 ok_button_text = "KEY_SAVE"
 dialog_text = "KEY_BEFORE_QUIT"
 cancel_button_text = "KEY_DISCARD_CHANGES"
