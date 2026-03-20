@@ -55,7 +55,10 @@ func _ready():
 	load_background_image(GlobalVariables.background_path)
 	bpm = GlobalVariables.speed
 	var audio_loader = AudioLoader.new()
-	$AudioStreamPlayer2.set_stream(audio_loader.loadfile(GlobalVariables.sound_path))
+	if GlobalVariables.sound_path == "res://assets/sprites/demo.mp3" or GlobalVariables.sound_path == null:
+		$AudioStreamPlayer2.stream = load(GlobalVariables.sound_path)
+	else:
+		$AudioStreamPlayer2.set_stream(audio_loader.loadfile(GlobalVariables.sound_path))
 #	$AnimationPlayer.seek(0.3, true)
 	load_midi()
 	start()

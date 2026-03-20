@@ -6,6 +6,13 @@ Godot 4.6 を使用して制作されました。
 
 不具合は [GitHub Issues](https://github.com/icysamon/almam-player/issues) または[メール](mailto:me@icysamon.com)に報告してください。
 
+## ダウンロード
+https://github.com/icysamon/almam-player/releases
+
+初めて起動した場合 MIDI トラックがおかしくなる可能性があります。その場合アプリを再起動してください。
+
+MIDI とオーディオファイルをインポート後プレビューリセットボタンを押してください。
+
 ## 確認した不具合と対応方法
 
 僕は日本語化といくつかのUI改善を行なっただけなので、現時点確認した不具合はほとんど以前から存在したものです。僕も修復作業が行いたいが今年就職活動と大学院の研究があるのであんまり期待しないでね>~<

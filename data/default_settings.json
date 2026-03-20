@@ -1,6 +1,6 @@
 {
 	"audio_offset": 0.0,
-	"background_path": "res://assets/sprites/white.png",
+	"background_path": "res://assets/sprites/black_image.png",
 	"bottom_note": 26,
 	"colors_json": {
 		"0": "e75454ff",
