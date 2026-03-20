@@ -1,7 +1,7 @@
 {
 	"audio_offset": 0.0,
 	"background_path": "res://assets/sprites/black_image.png",
-	"bottom_note": 26,
+	"bottom_note": 48,
 	"colors_json": {
 		"0": "e75454ff",
 		"1": "e38a4fff",
@@ -36,7 +36,7 @@
 		"8": false,
 		"9": false
 	},
-	"json_path": "res://assets/sprites/demo.mid",
+	"json_path": "C:\\Users\\icysa\\Downloads\\midi.mid",
 	"note_effect_texture": {
 		"0": "res://assets/sprites/note_effect_texture.png",
 		"1": "res://assets/sprites/note_effect_texture.png",
@@ -55,7 +55,7 @@
 		"9": "res://assets/sprites/note_effect_texture.png"
 	},
 	"note_size": 18.0,
-	"note_spacing": 9.97101449275362,
+	"note_spacing": 14.3333333333333,
 	"note_texture": {
 		"0": "res://assets/sprites/note_texture.png",
 		"1": "res://assets/sprites/note_texture.png",
@@ -108,7 +108,7 @@
 		"9": 1.08
 	},
 	"pitch_bend_strength": 0.5,
-	"sound_path": "res://assets/sprites/demo.mp3",
+	"sound_path": "C:\\Users\\icysa\\Downloads\\2025_2-12.mp3",
 	"speed": 305.0,
 	"square_ratio": null,
 	"staccato": {

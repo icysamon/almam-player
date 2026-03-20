@@ -30,21 +30,16 @@ var delay = 0.5
 
 var should_quit : bool = true
 
-var loaded_config: String = ""
-
 func _ready():
-	#var arguments = {}
-	#for argument in OS.get_cmdline_user_args():
-		#if argument.find("=") > -1:
-			#var key_value = argument.split("=")
-			#arguments[key_value[0].lstrip("--")] = key_value[1]
-		#else:
-			#arguments[argument.lstrip("--")] = ""
-	#printerr(arguments["loaded_config"])
-	if loaded_config != "":
-		GlobalVariables.load_settings(loaded_config)
-	else:
-		printerr("Don't get loaded_config")
+	var arguments = {}
+	for argument in OS.get_cmdline_user_args():
+		if argument.find("=") > -1:
+			var key_value = argument.split("=")
+			arguments[key_value[0].lstrip("--")] = key_value[1]
+		else:
+			arguments[argument.lstrip("--")] = ""
+	printerr(arguments["loaded_config"])
+	GlobalVariables.load_settings(arguments["loaded_config"])
 #	print(GlobalVariables.square_ratio)
 	if GlobalVariables.square_ratio:
 #		ProjectSettings.set_setting("display/window/size/viewport_width", 1080)

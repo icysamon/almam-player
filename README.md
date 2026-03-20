@@ -7,6 +7,7 @@ Godot 4.6 を使用して制作されました。
 不具合は [GitHub Issues](https://github.com/icysamon/almam-player/issues) または[メール](mailto:me@icysamon.com)に報告してください。
 
 ## ダウンロード
+
 https://github.com/icysamon/almam-player/releases
 
 初めて起動した場合 MIDI トラックがおかしくなる可能性があります。その場合アプリを再起動してください。
@@ -14,8 +15,6 @@ https://github.com/icysamon/almam-player/releases
 MIDI とオーディオファイルをインポート後プレビューリセットボタンを押してください。
 
 ## 確認した不具合と対応方法
-
-僕は日本語化といくつかのUI改善を行なっただけなので、現時点確認した不具合はほとんど以前から存在したものです。僕も修復作業が行いたいが今年就職活動と大学院の研究があるのであんまり期待しないでね>~<
 
 以下の対応方法は必ず解決できるとは言いえません。
 
@@ -41,24 +40,19 @@ MIDI とオーディオファイルをインポート後プレビューリセッ
 
 設定ファイルの問題でアプリが起動できない場合があります。
 
-ユーザーデータを削除して解決するかもしれません。
+ユーザーデータを削除したら解決できるかもしれません。
 
 事前にアプリを終了してください。
 
 ### Windows
 
-1. `スタートアイコン` を右クリックして `ファイル名を指定して実行` を選択（Win + R）
+1. `スタートアイコン` を右クリック（または Win + R）して `ファイル名を指定して実行` を選択
 2. `%APPDATA%` を入力し実行
-3. `Roaming` フォルダを開く
-4. `ALMAMPlayer`フォルダを削除
+3. `ALMAMPlayer`フォルダを削除
 
 ### Mac
 ...
 
 ## MP4 の出力ができますか
 
-残念ながら現時点ではどうしてもできません。
-
-このツールはオープンソースゲームエンジン Godot で作成されたものです。公式の[ドキュメント](https://docs.godotengine.org/en/stable/tutorials/animation/creating_movies.html)によると AVI しかサポートされていません。
-
-なお、オフラインレンダリングので出力速度が少し遅いと思います。
+このツールはゲームエンジン Godot で作成されたものです。公式の[ドキュメント](https://docs.godotengine.org/en/stable/tutorials/animation/creating_movies.html)によると現時点 AVI しかサポートされていません。
