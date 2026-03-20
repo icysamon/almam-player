@@ -290,13 +290,19 @@ func load_background_image(file):
 #	if err != OK:
 #		# Failed
 #		print("error loading image :(")
-
+	
 	if file == "res://assets/sprites/black_image.png":
 		return
-	background.texture = ImageTexture.create_from_image(Image.load_from_file(file))
-#	background.texture.create_from_image(image)
-	$Camera2D/BackgroundImageSquare.texture = background.texture
-	GlobalVariables.background_path = file
+	
+	# Check and load background image
+	if FileAccess.file_exists(file):
+		background.texture = ImageTexture.create_from_image(Image.load_from_file(file))
+	#	background.texture.create_from_image(image)
+		$Camera2D/BackgroundImageSquare.texture = background.texture
+		GlobalVariables.background_path = file
+	else:
+		file = "res://assets/sprites/black_image.png"
+		return
 	
 func start():
 	await get_tree().create_timer(0.5).timeout
