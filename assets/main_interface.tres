@@ -1,5 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://cfni7mm2mqusg"]
 
+[ext_resource type="FontFile" uid="uid://beoc0xd363vxo" path="res://assets/fonts/LINESeedJP_20241105/Desktop/OTF/LINESeedJP_OTF_Rg.otf" id="1_mr508"]
 [ext_resource type="Texture2D" uid="uid://dxguik1v3nxte" path="res://assets/sprites/slider.png" id="1_ob0s7"]
 [ext_resource type="Texture2D" uid="uid://bn4cspxrqm4hh" path="res://assets/sprites/slide_highlight.png" id="2_jyppk"]
 
@@ -279,6 +280,7 @@ Button/colors/font_focus_color = Color(0.172549, 0.172549, 0.172549, 1)
 Button/colors/font_hover_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
 Button/colors/font_hover_pressed_color = Color(0.129412, 0.129412, 0.129412, 1)
 Button/colors/font_pressed_color = Color(0.254902, 0.0862745, 0.0627451, 1)
+Button/fonts/font = ExtResource("1_mr508")
 Button/styles/focus = SubResource("StyleBoxLine_2fxy4")
 Button/styles/hover = SubResource("StyleBoxFlat_k2sf0")
 Button/styles/normal = SubResource("StyleBoxFlat_4d7sw")

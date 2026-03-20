@@ -30,6 +30,7 @@ outline_color = Color(0.980469, 0.730469, 0.347656, 1)
 
 [node name="Control" type="Control" unique_id=2097781819 groups=["MainInterface"]]
 process_mode = 3
+texture_filter = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,13 +54,15 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 36
+theme_override_constants/margin_bottom = 12
 
 [node name="HSplitContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1629558451]
+custom_minimum_size = Vector2(1280, 720)
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer" unique_id=550740155]
@@ -467,39 +470,32 @@ theme_override_font_sizes/normal_font_size = 27
 text = "KEY_VELOCITY_PITCH_DESCRIPTION"
 fit_content = true
 
-[node name="Control" type="Control" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1186003799]
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=121744242]
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/Control" unique_id=1062807820]
-layout_mode = 0
-offset_left = 4.0
-offset_right = 428.0
-offset_bottom = 449.0
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=1062807820]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 27
 text = "KEY_DESCRIPTION"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/Control" unique_id=1747114580]
-layout_mode = 0
-offset_left = -25.0
-offset_right = -24.0
-offset_bottom = 449.0
+[node name="RichTextLabel2" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=1747114580]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 28
 text = "you dont get an actual preview of the midi notes here sorry"
 
-[node name="MP3" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/Control" unique_id=63865881]
+[node name="MP3" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=63865881]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 4.0
-offset_top = 352.0
-offset_right = 406.0
-offset_bottom = 480.0
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
 theme_override_colors/default_color = Color(0.129412, 0.498039, 0.321569, 1)
 theme_override_font_sizes/normal_font_size = 22
-text = "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+text = "<mp3 file path>"
 autowrap_mode = 1
 
 [node name="Preview" type="Node2D" parent="." unique_id=47549259]
@@ -541,6 +537,7 @@ use_native_dialog = true
 
 [node name="ExportVideo" type="FileDialog" parent="." unique_id=675531568]
 unique_name_in_owner = true
+oversampling_override = 1.0
 initial_position = 2
 size = Vector2i(1200, 675)
 access = 2
@@ -550,23 +547,26 @@ use_native_dialog = true
 [node name="SaveBeforeNewDialog" type="ConfirmationDialog" parent="." unique_id=1086183324]
 unique_name_in_owner = true
 oversampling_override = 1.0
+title = "KEY_CONFIRM"
 initial_position = 2
 size = Vector2i(528, 100)
-ok_button_text = "Save"
-dialog_text = "Save current changes (if any idk sorry) before creating new config?"
-cancel_button_text = "Discard changes"
+ok_button_text = "KEY_SAVE"
+dialog_text = "KEY_BEFORE_SAVE"
+cancel_button_text = "KEY_DISCARD_CHANGES"
 
 [node name="SaveBeforeQuit" type="ConfirmationDialog" parent="." unique_id=2038684803]
 unique_name_in_owner = true
 oversampling_override = 1.0
+title = "KEY_CONFIRM"
 initial_position = 2
 size = Vector2i(399, 100)
-ok_button_text = "Save"
-dialog_text = "Save changes (if any idk sorry) before quitting?"
-cancel_button_text = "Discard changes"
+ok_button_text = "KEY_SAVE"
+dialog_text = "KEY_BEFORE_QUIT"
+cancel_button_text = "KEY_DISCARD_CHANGES"
 
 [node name="SaveConfig" type="FileDialog" parent="." unique_id=1057888864]
 unique_name_in_owner = true
+oversampling_override = 1.0
 title = "Save config as..."
 initial_position = 2
 size = Vector2i(1200, 675)
@@ -576,6 +576,7 @@ use_native_dialog = true
 
 [node name="CreateNewConfig" type="FileDialog" parent="." unique_id=1938878364]
 unique_name_in_owner = true
+oversampling_override = 1.0
 title = "Create new config..."
 initial_position = 2
 size = Vector2i(1200, 675)
@@ -585,6 +586,7 @@ use_native_dialog = true
 
 [node name="LoadSongFileDialog" type="FileDialog" parent="." unique_id=1387753520]
 unique_name_in_owner = true
+oversampling_override = 1.0
 title = "Open File(s)"
 initial_position = 2
 size = Vector2i(1200, 675)
@@ -595,6 +597,7 @@ use_native_dialog = true
 
 [node name="LoadConfigDialog" type="FileDialog" parent="." unique_id=617992261]
 unique_name_in_owner = true
+oversampling_override = 1.0
 title = "Open a File"
 initial_position = 2
 size = Vector2i(1200, 675)
