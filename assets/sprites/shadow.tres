@@ -1,4 +1,4 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cisthueei7s8l"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cisthueei7s8l"]
 
 [sub_resource type="Shader" id="3"]
 code = "shader_type canvas_item;
@@ -7,7 +7,7 @@ render_mode blend_mix;
 uniform float soft_radius = 3.0;
 uniform float radius = 5.0;
 uniform float soft_spread = 5.0;
-uniform vec4 modulate: hint_color;
+uniform vec4 modulate: source_color;
 
 void fragment() {
 	vec2 ps = TEXTURE_PIXEL_SIZE;
@@ -44,3 +44,7 @@ void fragment() {
 
 [resource]
 shader = SubResource("3")
+shader_parameter/soft_radius = 3.0
+shader_parameter/radius = 5.0
+shader_parameter/soft_spread = 5.0
+shader_parameter/modulate = Color(0.24115604, 0.24115604, 0.24115604, 1)
