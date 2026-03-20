@@ -1,12 +1,5 @@
 KEYS,en,ja
 KEY_SPEED,Speed/Zoom,拡大/縮小
-KEY_DESCRIPTION,"drag a .mid and a .mp3 file here !
-you can also add a background image
-if a track is above another one in the list it will get drawn in front of it
-
-created by almam:)",".mid と .mp3 ファイルをここにどらぐしてください！
-こうして背景を追加することもできる
-if a track is above another one in the list it will get drawn in front of it"
 KEY_PREVIEW_VIDIO,"Preview Video","プレビュー"
 KEY_EXPORT_VIDIO,"Export Video","エクスポート"
 KEY_RESET_PREVIEW,"Reset Live Preview","プレビューをリセット"
@@ -31,4 +24,11 @@ KEY_NOTE_LENGTH_PREVIEW,"note length preview","ノード長さプレビュー"
 KEY_PLAY,"Play","再生"
 KEY_VELOCITY_FORCE,"Velocity force","ベロシティの影響度"
 KEY_PITCH_BEND_LVL,"Pitch bend lvl","ピッチベンドの影響度"
-KEY_VELOCITY_PITCH_DESCRIPTION,"^ if u dont want any velocity/pitch bend visualization set these all the way to the left","ベロシティやピッチベンドの可視化が不要な場合は、これらのスライダーを一番左に設定してください"
+KEY_VELOCITY_PITCH_DESCRIPTION,"^ if u dont want any velocity/pitch bend visualization set these all the way to the left","ベロシティやピッチベンドの可視化が不要な場合は、スライダーを一番左に設定してください"
+KEY_DESCRIPTION,"drag a .mid and a .mp3 file here !
+you can also add a background image
+if a track is above another one in the list it will get drawn in front of it
+
+created by almam:)",".mid と .mp3 ファイルをここにドロップぐしてください！
+こうして背景を追加することも可能です。
+リスト内でトラックが他のトラックより上にある場合、そのトラックが手前に描画されます。"

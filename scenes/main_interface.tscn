@@ -42,19 +42,18 @@ metadata/_edit_vertical_guides_ = []
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=270583029]
 layout_mode = 0
-offset_left = -27371.0
-offset_top = -7646.0
-offset_right = 30075.0
-offset_bottom = 9273.0
+offset_left = -27574.0
+offset_top = -7580.0
+offset_right = 29872.0
+offset_bottom = 9339.0
 color = Color(1, 0.996078, 0.988235, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=2012082306]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_bottom = 17.0
-grow_horizontal = 2
-grow_vertical = 2
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
@@ -76,24 +75,28 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
 text = "KEY_NEW_CONFIG"
+clip_text = true
 
 [node name="LoadConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=423917229]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
 text = "KEY_LOAD_CONFIG"
+clip_text = true
 
 [node name="SaveConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=1078963601]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
 text = "KEY_SAVE_CONFIG"
+clip_text = true
 
 [node name="SaveAsConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=92890089]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
 text = "KEY_SAVE_AS"
+clip_text = true
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=1481907148]
 layout_mode = 2
