@@ -322,7 +322,25 @@ func load_image(file):
 
 func _on_preview_button_pressed():
 	GlobalVariables.save_settings()
-	OS.create_process(OS.get_executable_path(), ["res://scenes/BUG.tscn", GlobalVariables.background_path, "--", "--loaded_config=" + GlobalVariables.loaded_settings_path])
+	#OS.create_process(OS.get_executable_path(), ["res://scenes/BUG.tscn", GlobalVariables.background_path, "--", "--loaded_config=" + GlobalVariables.loaded_settings_path])
+	var new_window = Window.new()
+	new_window.title = "MIDI Player"
+	new_window.size = Vector2i(1600, 900)
+	new_window.close_requested.connect(new_window.queue_free)
+	
+	# Set windows to display center
+	var current_screen = DisplayServer.window_get_current_screen()
+	var screen_size = DisplayServer.screen_get_size(current_screen)
+	var screen_pos = DisplayServer.screen_get_position(current_screen)
+	var center_pos = screen_pos + (screen_size / 2) - (new_window.size / 2)
+	new_window.position = center_pos
+
+	# Instantiate the new window
+	var bug_scene = load("res://scenes/BUG.tscn").instantiate()
+	var loaded_config: String = "--loaded_config=" + GlobalVariables.loaded_settings_path
+	bug_scene.loaded_config = loaded_config
+	new_window.add_child(bug_scene)
+	add_child(new_window)
 
 func _on_export_button_pressed():
 	GlobalVariables.save_settings()

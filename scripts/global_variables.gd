@@ -173,6 +173,7 @@ func _ready():
 	load_settings(loaded_settings_path)
 	get_tree().get_nodes_in_group("MainInterface")[0].update_sliders()
 
+
 func _process(delta):
 	if Input.is_action_just_pressed("fullscreen"):
 		if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:

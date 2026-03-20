@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6ysj7iqgvwi8"]
+[gd_scene format=3 uid="uid://c6ysj7iqgvwi8"]
 
 [ext_resource type="Texture2D" uid="uid://df6uqumd68lfc" path="res://assets/sprites/black.png" id="2_6yw2j"]
 [ext_resource type="AudioStream" uid="uid://boyukfkauvaus" path="res://assets/sprites/demo.mp3" id="3_0ld63"]
-[ext_resource type="Script" path="res://scripts/beat_detection.gd" id="13"]
+[ext_resource type="Script" uid="uid://fcpyc8im1o4i" path="res://scripts/beat_detection.gd" id="13"]
 
 [sub_resource type="Animation" id="25"]
 length = 0.001
@@ -13,16 +13,16 @@ length = 4.8
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ao02s"]
 _data = {
-"RESET": SubResource("25"),
-"wave": SubResource("26")
+&"RESET": SubResource("25"),
+&"wave": SubResource("26")
 }
 
-[node name="Bug" type="Node2D" groups=["World"]]
+[node name="Bug" type="Node2D" unique_id=1659624110 groups=["World"]]
 script = ExtResource("13")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1627248873]
 
-[node name="BackgroundImage" type="TextureRect" parent="Camera2D"]
+[node name="BackgroundImage" type="TextureRect" parent="Camera2D" unique_id=1581655742]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -37,7 +37,7 @@ grow_vertical = 2
 texture = ExtResource("2_6yw2j")
 stretch_mode = 6
 
-[node name="BackgroundImageSquare" type="TextureRect" parent="Camera2D"]
+[node name="BackgroundImageSquare" type="TextureRect" parent="Camera2D" unique_id=142163192]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -51,58 +51,56 @@ grow_horizontal = 2
 grow_vertical = 2
 stretch_mode = 6
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1171116510]
 stream = ExtResource("3_0ld63")
 bus = &"Music"
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1992354562]
 stream = ExtResource("3_0ld63")
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Node2D" type="Node2D" parent="." unique_id=1033137659]
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=254508926]
 wait_time = 0.1
 
-[node name="WaveAnchor" type="Node2D" parent="."]
+[node name="WaveAnchor" type="Node2D" parent="." unique_id=2101615182]
 position = Vector2(0, 540)
 
-[node name="NoteHolder" type="Node2D" parent="WaveAnchor" groups=["NoteHolder"]]
+[node name="NoteHolder" type="Node2D" parent="WaveAnchor" unique_id=1746698449 groups=["NoteHolder"]]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="WaveAnchor/NoteHolder"]
-autoplay = "RESET"
-libraries = {
-"": SubResource("AnimationLibrary_ao02s")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WaveAnchor/NoteHolder" unique_id=1309177160]
+libraries/ = SubResource("AnimationLibrary_ao02s")
+autoplay = &"RESET"
 
-[node name="SpeedUp" type="Timer" parent="."]
+[node name="SpeedUp" type="Timer" parent="." unique_id=1110301860]
 wait_time = 10.434
 one_shot = true
 
-[node name="SpeedUp2" type="Timer" parent="."]
+[node name="SpeedUp2" type="Timer" parent="." unique_id=1628510575]
 wait_time = 41.739
 one_shot = true
 
-[node name="Slowdown" type="Timer" parent="."]
+[node name="Slowdown" type="Timer" parent="." unique_id=1587223180]
 wait_time = 45.217
 one_shot = true
 
-[node name="Slowdown2" type="Timer" parent="."]
+[node name="Slowdown2" type="Timer" parent="." unique_id=15709830]
 wait_time = 52.173
 one_shot = true
 
-[node name="Slowdown3" type="Timer" parent="."]
+[node name="Slowdown3" type="Timer" parent="." unique_id=1549782816]
 wait_time = 52.173
 one_shot = true
 
-[node name="SpeedUp4" type="Timer" parent="."]
+[node name="SpeedUp4" type="Timer" parent="." unique_id=1654862291]
 wait_time = 48.695
 one_shot = true
 
-[node name="SpeedUp5" type="Timer" parent="."]
+[node name="SpeedUp5" type="Timer" parent="." unique_id=1238270217]
 wait_time = 55.652
 one_shot = true
 
-[node name="stop" type="Timer" parent="."]
+[node name="stop" type="Timer" parent="." unique_id=608698387]
 wait_time = 2.06
 one_shot = true
 
