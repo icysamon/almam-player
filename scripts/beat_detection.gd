@@ -63,7 +63,8 @@ func _ready():
 func load_midi():
 	smf_data = null
 	if self.smf_data == null:
-		var smf_reader: = SMF.new( )
+		var smf_reader: = SMF.new()
+		print(GlobalVariables.sound_path)
 		var result: = smf_reader.read_file(GlobalVariables.json_path)
 		if result.error == OK:
 			self.smf_data = result.data

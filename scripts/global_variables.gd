@@ -141,7 +141,7 @@ func load_settings(path):
 		note_texture_margins_json = save_data["note_texture_margins_json"]
 		staccato = save_data["staccato"]
 	else:
-		save_settings("user://default_settings.json")
+		save_settings("res://data/default_settings.json")
 		return
 		
 #		load_settings("user://default_settings.json")
