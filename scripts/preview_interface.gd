@@ -28,7 +28,7 @@ func _process(_delta):
 
 func _on_pause_button_pressed():
 	get_tree().paused = !get_tree().paused
-	pause_.text = "Play" if get_tree().paused else "Pause"
+	pause_.text = "KEY_PLAY" if get_tree().paused else "KEY_STOP"
 
 func _on_seek_slider_drag_started():
 	pause_status_before_seek_ = get_tree().paused

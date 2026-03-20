@@ -4,12 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://dxguik1v3nxte" path="res://assets/sprites/slider.png" id="1_ob0s7"]
 [ext_resource type="Texture2D" uid="uid://bn4cspxrqm4hh" path="res://assets/sprites/slide_highlight.png" id="2_jyppk"]
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_2fxy4"]
-color = Color(0.945098, 0.584314, 0.231373, 1)
-grow_begin = 0.0
-grow_end = 0.0
-thickness = 8
-vertical = true
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr508"]
+bg_color = Color(0.94509804, 0.58431375, 0.23137255, 0.47058824)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2sf0"]
 content_margin_left = 8.0
@@ -275,13 +275,14 @@ corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
 [resource]
+AcceptDialog/font_sizes/title_font_size = 16
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_focus_color = Color(0.172549, 0.172549, 0.172549, 1)
 Button/colors/font_hover_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
 Button/colors/font_hover_pressed_color = Color(0.129412, 0.129412, 0.129412, 1)
 Button/colors/font_pressed_color = Color(0.254902, 0.0862745, 0.0627451, 1)
 Button/fonts/font = ExtResource("1_mr508")
-Button/styles/focus = SubResource("StyleBoxLine_2fxy4")
+Button/styles/focus = SubResource("StyleBoxFlat_mr508")
 Button/styles/hover = SubResource("StyleBoxFlat_k2sf0")
 Button/styles/normal = SubResource("StyleBoxFlat_4d7sw")
 Button/styles/pressed = SubResource("StyleBoxFlat_b8c20")
@@ -297,10 +298,12 @@ HSlider/icons/grabber = ExtResource("1_ob0s7")
 HSlider/icons/grabber_highlight = ExtResource("2_jyppk")
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_r8rnw")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_ev4rt")
+Label/font_sizes/font_size = 24
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/font_sizes/font_size = 22
 LineEdit/styles/focus = SubResource("StyleBoxFlat_8q28a")
 LineEdit/styles/normal = SubResource("StyleBoxFlat_oa882")
+OptionButton/font_sizes/font_size = 16
 TabContainer/styles/panel = SubResource("StyleBoxFlat_03b4d")
 TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_4r3bj")
 TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_4jlw2")

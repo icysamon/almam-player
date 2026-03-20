@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b0xeqv8tpsd05"]
+
+[ext_resource type="Script" uid="uid://b23bqjjo4ywus" path="res://scripts/language_button.gd" id="1_hix1u"]
+
+[node name="LanguageButton" type="VBoxContainer" unique_id=261203452]
+script = ExtResource("1_hix1u")
+
+[node name="Label" type="Label" parent="." unique_id=1075358672]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5946399, 0.26251468, 0.48276794, 1)
+text = "KEY_LANGUAGE"
+
+[node name="OptionButton" type="OptionButton" parent="." unique_id=1281892435]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "日本語"
+popup/item_1/id = 1
+
+[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]

@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://dmvcvl74s4ms7" path="res://scripts/preview.gd" id="3_h8nuy"]
 [ext_resource type="Script" uid="uid://ey3qmp6om7pg" path="res://scripts/preview_interface.gd" id="5_6wx70"]
 [ext_resource type="PackedScene" uid="uid://bmil4knpx81j2" path="res://scenes/live_preview.tscn" id="5_ej8h7"]
+[ext_resource type="PackedScene" uid="uid://b0xeqv8tpsd05" path="res://scenes/language_button.tscn" id="5_jarby"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2bhba"]
 bg_color = Color(0.968627, 0.968627, 0.968627, 1)
@@ -470,6 +471,9 @@ theme_override_font_sizes/normal_font_size = 27
 text = "KEY_VELOCITY_PITCH_DESCRIPTION"
 fit_content = true
 
+[node name="LanguageButton" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=261203452 instance=ExtResource("5_jarby")]
+layout_mode = 2
+
 [node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=121744242]
 clip_contents = true
 layout_mode = 2
@@ -487,7 +491,7 @@ custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 28
-text = "you dont get an actual preview of the midi notes here sorry"
+text = "KEY_DESCRIPTION2"
 
 [node name="MP3" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=63865881]
 unique_name_in_owner = true
@@ -560,6 +564,7 @@ oversampling_override = 1.0
 title = "KEY_CONFIRM"
 initial_position = 2
 size = Vector2i(399, 100)
+visible = true
 ok_button_text = "KEY_SAVE"
 dialog_text = "KEY_BEFORE_QUIT"
 cancel_button_text = "KEY_DISCARD_CHANGES"
