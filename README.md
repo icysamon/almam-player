@@ -1,4 +1,4 @@
-# ALMAMPlayer
+# ALMAM Player
 
 [ALMAMPlayer](https://github.com/almam72/ALMAMPlayer) をベースに開発した MIDI ビジュアライザです。
 
@@ -29,7 +29,7 @@ https://github.com/icysamon/almam-player/releases
 
 ### 途中からリズムに合わせていない
 
-- 再生の場合ソフト以外のアプリに操作したらプログラムの動作が遅くなる
+- 再生の場合アプリ外部を操作したらプログラムの動作が遅くなる
 - テンポが変わる曲に対応していない
 
 ### "ノート押下"テキスチャーのインポートが失敗
