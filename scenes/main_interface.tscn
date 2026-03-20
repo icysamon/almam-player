@@ -546,14 +546,16 @@ use_native_dialog = true
 
 [node name="SaveBeforeNewDialog" type="ConfirmationDialog" parent="." unique_id=1086183324]
 unique_name_in_owner = true
+oversampling_override = 1.0
 initial_position = 2
-size = Vector2i(399, 100)
+size = Vector2i(528, 100)
 ok_button_text = "Save"
 dialog_text = "Save current changes (if any idk sorry) before creating new config?"
 cancel_button_text = "Discard changes"
 
 [node name="SaveBeforeQuit" type="ConfirmationDialog" parent="." unique_id=2038684803]
 unique_name_in_owner = true
+oversampling_override = 1.0
 initial_position = 2
 size = Vector2i(399, 100)
 ok_button_text = "Save"
