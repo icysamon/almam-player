@@ -2,7 +2,7 @@
 
 [ALMAMPlayer](https://github.com/almam72/ALMAMPlayer) をベースに開発した MIDI ビジュアライザです。
 
-Godot 4.6 を使用して制作されました。
+Godot 4.6 を使用して制作しました。
 
 不具合は [GitHub Issues](https://github.com/icysamon/almam-player/issues) または[メール](mailto:me@icysamon.com)に報告してください。
 
@@ -34,7 +34,7 @@ https://github.com/icysamon/almam-player/releases
 
 ### "ノート押下"テキスチャーのインポートが失敗
 
-別の写真をインポートし、そしてもう一回元の写真をインポートし試してください。
+別の画像をインポートし、そしてもう一回元の画像をインポートし試してください。
 
 ## ユーザーデータを削除する方法
 
@@ -51,8 +51,13 @@ https://github.com/icysamon/almam-player/releases
 3. `ALMAMPlayer`フォルダを削除
 
 ### Mac
-...
+
+ターミナルで以下のコマンドを実行してください。
+
+```
+rm -d -r Library/Application\ Support/ALMAMPlayer/
+```
 
 ## MP4 の出力ができますか
 
-このツールはゲームエンジン Godot で作成されたものです。公式の[ドキュメント](https://docs.godotengine.org/en/stable/tutorials/animation/creating_movies.html)によると現時点 AVI しかサポートされていません。
+このツールはゲームエンジン Godot で作成されたものです。公式の[ドキュメント](https://docs.godotengine.org/en/stable/tutorials/animation/creating_movies.html)によると現時点 AVI 形式のみサポートされています。
