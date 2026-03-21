@@ -31,7 +31,6 @@ outline_color = Color(0.980469, 0.730469, 0.347656, 1)
 
 [node name="Control" type="Control" unique_id=2097781819 groups=["MainInterface"]]
 process_mode = 3
-texture_filter = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -43,6 +42,7 @@ script = ExtResource("1_v86r2")
 metadata/_edit_vertical_guides_ = []
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=270583029]
+texture_filter = 2
 layout_mode = 0
 offset_left = -27574.0
 offset_top = -7580.0
@@ -51,6 +51,7 @@ offset_bottom = 9339.0
 color = Color(1, 0.996078, 0.988235, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=2012082306]
+texture_filter = 2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -63,18 +64,22 @@ theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
 [node name="HSplitContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1629558451]
+texture_filter = 2
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer" unique_id=550740155]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=488387864]
+texture_filter = 2
 custom_minimum_size = Vector2(0, 64)
 layout_mode = 2
 
 [node name="NewConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=1411138757]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
@@ -82,6 +87,7 @@ text = "KEY_NEW_CONFIG"
 clip_text = true
 
 [node name="LoadConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=423917229]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
@@ -89,6 +95,7 @@ text = "KEY_LOAD_CONFIG"
 clip_text = true
 
 [node name="SaveConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=1078963601]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
@@ -96,6 +103,7 @@ text = "KEY_SAVE_CONFIG"
 clip_text = true
 
 [node name="SaveAsConfigButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer5" unique_id=92890089]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 30
@@ -103,58 +111,69 @@ text = "KEY_SAVE_AS"
 clip_text = true
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=1481907148]
+texture_filter = 2
 layout_mode = 2
 
 [node name="NoteTextureButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer2" unique_id=678213146]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
 text = "KEY_NOTE_TEXTURE"
 
 [node name="EffectTextureButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer2" unique_id=1321402409]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
 text = "KEY_NOTE_ON_TEXTURE"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=319285805]
+texture_filter = 2
 layout_mode = 2
 
 [node name="LeftMarginSlider" type="HSlider" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer3" unique_id=106802050]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 value = 11.0
 
 [node name="LeftMarginButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer3" unique_id=300274530]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
 text = "KEY_NOTE_LEFT_MARGIN"
 
 [node name="RightMarginSlider" type="HSlider" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer3" unique_id=1969255879]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 value = 11.0
 
 [node name="RightMarginButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer3" unique_id=1343362204]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
 text = "KEY_NOTE_RIGHT_MARGIN"
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=2035209208]
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer4" unique_id=2015336999]
 modulate = Color(0.666667, 0.329412, 0.384314, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 28
 text = "KEY_NOTE_LENGTH_PREVIEW"
 
 [node name="NoteLengthSlider" type="HSlider" parent="MarginContainer/HSplitContainer/VBoxContainer/HBoxContainer4" unique_id=321560945]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -164,6 +183,7 @@ step = 0.1
 value = 0.5
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=17140283]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -171,16 +191,20 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_2bhba")
 
 [node name="ColorContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer/ScrollContainer" unique_id=1932764688]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 theme_override_constants/separation = 32
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer" unique_id=372101847]
+texture_filter = 2
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer" unique_id=1430701093]
+texture_filter = 2
 layout_mode = 2
 
 [node name="ResetColorsButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer/HBoxContainer" unique_id=845434918]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
@@ -188,6 +212,7 @@ theme_override_font_sizes/font_size = 32
 text = "KEY_RESET_COLORS"
 
 [node name="ResetParallaxButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer/HBoxContainer" unique_id=1066810770]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
@@ -195,9 +220,11 @@ theme_override_font_sizes/font_size = 32
 text = "KEY_RESET_PARALLAZX"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer" unique_id=1535645203]
+texture_filter = 2
 layout_mode = 2
 
 [node name="ResetNoteTextureButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer/HBoxContainer2" unique_id=1967642532]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
@@ -205,6 +232,7 @@ theme_override_font_sizes/font_size = 32
 text = "KEY_RESET_TEXTURE"
 
 [node name="ResetNoteEffectTextureButton" type="Button" parent="MarginContainer/HSplitContainer/VBoxContainer/VBoxContainer/HBoxContainer2" unique_id=1347754815]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
@@ -238,10 +266,12 @@ unique_name_in_owner = true
 process_mode = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/LivePreviewInterface" unique_id=920955979]
+texture_filter = 2
 layout_mode = 2
 size_flags_vertical = 8
 
 [node name="Pause" type="Button" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/LivePreviewInterface/HBoxContainer" unique_id=1784061785]
+texture_filter = 2
 custom_minimum_size = Vector2(115, 56)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -250,6 +280,7 @@ theme_override_font_sizes/font_size = 34
 text = "KEY_PLAY"
 
 [node name="SeekTime" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/LivePreviewInterface/HBoxContainer" unique_id=1525085261]
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0.980469, 0.730469, 0.347656, 1)
@@ -257,6 +288,7 @@ text = "0:00"
 label_settings = SubResource("LabelSettings_cjaje")
 
 [node name="SeekSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/LivePreviewInterface/HBoxContainer" unique_id=1423861426]
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -264,23 +296,28 @@ step = 0.125
 scrollable = false
 
 [node name="Sizer" type="TextureRect" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer" unique_id=1874147436]
+texture_filter = 2
 custom_minimum_size = Vector2(960, 0)
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 6
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer" unique_id=603539609]
+texture_filter = 2
 layout_mode = 2
 theme_override_constants/separation = 24
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1211712733]
+texture_filter = 2
 layout_mode = 2
 
 [node name="SpeedSliderContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1965894177]
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/SpeedSliderContainer" unique_id=2072267952]
 modulate = Color(0.423529, 0, 0.0980392, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
@@ -288,6 +325,7 @@ text = "KEY_SPEED"
 
 [node name="SpeedSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/SpeedSliderContainer" unique_id=20915922]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 min_value = 50.0
 max_value = 1000.0
@@ -296,16 +334,19 @@ value = 560.0
 
 [node name="NoteSpacingSliderContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1477809982]
 visible = false
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/NoteSpacingSliderContainer" unique_id=1653533271]
 modulate = Color(0.67, 0.2546, 0.351527, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Note Spacing"
 
 [node name="NoteSpacingSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/NoteSpacingSliderContainer" unique_id=405566513]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 max_value = 1.0
 step = 0.1
@@ -313,16 +354,19 @@ value = 1.0
 
 [node name="NoteSizeSliderContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=560484571]
 visible = false
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/NoteSizeSliderContainer" unique_id=1250350184]
 modulate = Color(0.67, 0.2546, 0.351527, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Note Size (height)"
 
 [node name="NoteSizeSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/NoteSizeSliderContainer" unique_id=357266844]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 min_value = 32.0
 max_value = 72.0
@@ -330,10 +374,12 @@ step = 2.0
 value = 64.0
 
 [node name="TopMarginSliderContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1486054939]
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TopMarginSliderContainer" unique_id=249121702]
 modulate = Color(0.423529, 0, 0.0980392, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
@@ -341,15 +387,18 @@ text = "KEY_TOP_MARGIN"
 
 [node name="TopMarginSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TopMarginSliderContainer" unique_id=38123716]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 max_value = 1080.0
 value = 880.0
 
 [node name="VerticalOffsetSliderContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=159822070]
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VerticalOffsetSliderContainer" unique_id=279405623]
 modulate = Color(0.423529, 0, 0.0980392, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
@@ -357,26 +406,31 @@ text = "KEY_BOTTOM_MARGIN"
 
 [node name="VerticalOffsetSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VerticalOffsetSliderContainer" unique_id=922893658]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 min_value = -1080.0
 max_value = 0.0
 value = -192.0
 
 [node name="AudioOffsetContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=2084354763]
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/AudioOffsetContainer" unique_id=930627075]
 modulate = Color(0.423529, 0, 0.0980392, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
 text = "KEY_OFFSET_AUDIO"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/AudioOffsetContainer" unique_id=230416555]
+texture_filter = 2
 layout_mode = 2
 
 [node name="AudioOffsetSlider" type="SpinBox" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/AudioOffsetContainer/HBoxContainer" unique_id=1077899888]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 0
 min_value = -10.0
@@ -387,6 +441,7 @@ allow_lesser = true
 update_on_text_changed = true
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/AudioOffsetContainer/HBoxContainer" unique_id=821466060]
+texture_filter = 2
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -395,46 +450,55 @@ text = "KEY_SECONDS"
 fit_content = true
 
 [node name="PreviewButton" type="Button" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=884125282]
+texture_filter = 2
 layout_mode = 2
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 34
 text = "KEY_PREVIEW_VIDIO"
 
 [node name="ExportButton2" type="Button" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=732652287]
+texture_filter = 2
 layout_mode = 2
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 34
 text = "KEY_EXPORT_VIDIO"
 
 [node name="ResetPreviewButton" type="Button" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1478164578]
+texture_filter = 2
 layout_mode = 2
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 25
 text = "KEY_RESET_PREVIEW"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=527296240]
+texture_filter = 2
 layout_mode = 2
 
 [node name="SquareToggleContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=229366239]
 visible = false
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/SquareToggleContainer" unique_id=1844802756]
 modulate = Color(0.666667, 0.329412, 0.384314, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Square ratio"
 
 [node name="SquareToggle" type="CheckButton" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/SquareToggleContainer" unique_id=1848628634]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 4
 
 [node name="VelocitySliderContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=153154540]
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/VelocitySliderContainer" unique_id=402590358]
 modulate = Color(0.423529, 0, 0.0980392, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
@@ -442,16 +506,19 @@ text = "KEY_VELOCITY_FORCE"
 
 [node name="VelocitySlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/VelocitySliderContainer" unique_id=306166353]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 max_value = 0.25
 step = 0.001
 value = 0.2
 
 [node name="PitchBendSliderContainer" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=2017533431]
+texture_filter = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/PitchBendSliderContainer" unique_id=1860788261]
 modulate = Color(0.423529, 0, 0.0980392, 1)
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
@@ -459,12 +526,14 @@ text = "KEY_PITCH_BEND_LVL"
 
 [node name="PitchBendSlider" type="HSlider" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/PitchBendSliderContainer" unique_id=664152250]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
 max_value = 0.75
 step = 0.001
 value = 0.5
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=974083246]
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 27
@@ -472,14 +541,17 @@ text = "KEY_VELOCITY_PITCH_DESCRIPTION"
 fit_content = true
 
 [node name="LanguageButton" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=261203452 instance=ExtResource("5_jarby")]
+texture_filter = 2
 layout_mode = 2
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=121744242]
+texture_filter = 2
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=1062807820]
+texture_filter = 2
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -487,6 +559,7 @@ theme_override_font_sizes/normal_font_size = 27
 text = "KEY_DESCRIPTION"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=1747114580]
+texture_filter = 2
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -495,6 +568,7 @@ text = "KEY_DESCRIPTION2"
 
 [node name="MP3" type="RichTextLabel" parent="MarginContainer/HSplitContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=63865881]
 unique_name_in_owner = true
+texture_filter = 2
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme_override_colors/default_color = Color(0.129412, 0.498039, 0.321569, 1)
