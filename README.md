@@ -55,7 +55,7 @@ https://github.com/icysamon/almam-player/releases
 ターミナルで以下のコマンドを実行してください。
 
 ```
-rm -d -r Library/Application\ Support/ALMAMPlayer/
+rm -rf ~/Library/Application\ Support/ALMAMPlayer/
 ```
 
 ## MP4 の出力ができますか
