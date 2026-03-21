@@ -1,5 +1,7 @@
 # ALMAM Player
 
+![cover.png](./doc/cover.png)
+
 [ALMAMPlayer](https://github.com/almam72/ALMAMPlayer) をベースに開発した MIDI ビジュアライザです。
 
 Godot 4.6 を使用して制作しました。
