@@ -18,7 +18,7 @@ var file_path
 @onready var LivePreview = $%LivePreview
 
 
-var track_color_scene = preload("res://scenes/TrackColor.tscn")
+var track_scene = preload("res://scenes/ui/track.tscn")
 
 var notes = []
 
@@ -156,7 +156,7 @@ func load_midi(midi_path):
 			continue
 		track_number += 1
 			
-		var track_color_instance = track_color_scene.instantiate()
+		var track_color_instance = track_scene.instantiate()
 		track_color_instance.text = track_name
 		color_container.add_child(track_color_instance)
 	track_number = 0
