@@ -171,7 +171,7 @@ func load_midi(midi_path):
 			track.color = Color.from_hsv(1.0 / number_of_tracks * track_number, 0.62 + float((track_number+1)) / float((number_of_tracks+1) * 4), 0.92 - float((track_number+1)) / float((number_of_tracks+1) * 4), 1.0)
 			track.dont_color = false
 			track.parallax = (1.2 / number_of_tracks * (number_of_tracks - track_number)) + 0.6
-			track.note_texture = "res://assets/sprites/note_texture.png"
+			track.note_texture = "res://assets/images/note.png"
 			track.note_effect_texture = "res://assets/sprites/note_effect_texture.png"
 			GlobalVariables.note_texture_margins[str(track_number)] = Vector2(12,12)
 			track.note_margins = Vector2(12,12)

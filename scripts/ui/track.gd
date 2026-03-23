@@ -15,21 +15,21 @@ extends Control
 @onready var color_check_box: Button = $BoxContainer/BoxContainer/ColorCheckBox
 @onready var gradient_start: Sprite2D = $BoxContainer/BoxContainer/GradientStart
 
-var number = 0
-var text = ""
-var color = Color(1.0, 1.0, 1.0, 1.0)
-var parallax = 1.0
-var note_texture = "res://assets/sprites/note_texture.png"
-var note_effect_texture = "res://assets/sprites/note_effect_texture.png"
-var default_texture = load("res://assets/sprites/note_texture.png")
-var default_staccato_texture = load("res://assets/sprites/note_staccato.png")
-var default_effect_texture = load("res://assets/sprites/note_effect_texture.png")
-var note_margins = Vector2(12,12)
-var mouse_inside_note = false
-var mouse_inside_noteon = false
-var staccato = false
-var dont_color = false
-var main_interface
+var number: int = 0
+var parallax: float = 1.0
+var text: String = ""
+var note_texture: String = "res://assets/images/note_staccato.png"
+var note_effect_texture: String = "res://assets/sprites/note_effect_texture.png"
+var color: Color = Color(1.0, 1.0, 1.0, 1.0)
+var default_texture: CompressedTexture2D = load("res://assets/images/note.png")
+var default_staccato_texture: CompressedTexture2D = load("res://assets/images/note_staccato.png")
+var default_effect_texture: CompressedTexture2D = load("res://assets/sprites/note_effect_texture.png")
+var note_margins: Vector2 = Vector2(12,12)
+var mouse_inside_note: bool = false
+var mouse_inside_noteon: bool = false
+var staccato: bool = false
+var dont_color: bool = false
+var main_interface: Control
 
 
 func _ready():
@@ -221,42 +221,37 @@ func apply_dont_color():
 	color_check_box.button_pressed = GlobalVariables.dont_color[str(number)]
 	#GlobalVariables.save_settings()
 	main_interface.LivePreview.notify_global_variable_change("dont_color")
-	
-	
+
+
 func set_note_texture():
-	# await get_tree().create_timer(0.1).timeout
-#	print(number)
 	var nt = GlobalVariables.note_texture.get(str(number))
 	match nt:
-		"res://assets/sprites/note_texture.png":
+		"res://assets/images/note.png":
 			nine_patch_rect.texture = default_texture
 			nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
 			#nine_patch_rect.custom_minimum_size.x = 250
 			nine_patch_rect.custom_minimum_size.y = 18
 			return
-		"res://assets/sprites/note_staccato_image.png":
+		"res://assets/images/note_staccato.png":
 			nine_patch_rect.texture = default_texture
 			nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
 			#nine_patch_rect.custom_minimum_size.x = 250
 			nine_patch_rect.custom_minimum_size.y = 18
 			return
 		null:
-			push_warning("note texture path is null!")
+			nine_patch_rect.texture = default_texture
+			nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
+			nine_patch_rect.custom_minimum_size.y = 18
 			return
-		_:
-			pass
-
-	var image = Image.load_from_file(nt)
-#	var image = Image.new()
-#	var err = image.load(GlobalVariables.note_texture[str(number)])
-#	if err != OK:
-##		# Failed
-#		print("error loading image :(")
-#		return
-#	nine_patch_rect.texture = ImageTexture.new()
-#	nine_patch_rect.texture.create_from_image(image)
-	nine_patch_rect.texture = ImageTexture.create_from_image(image)
-	nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
+	var image
+	if str(nt).begins_with("res://"):
+		image = load(nt)
+	else:
+		image = Image.load_from_file(nt)
+		
+	if image:
+		nine_patch_rect.texture = ImageTexture.create_from_image(image)
+		nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
 
 	main_interface.LivePreview.notify_global_variable_change("note_texture")
 
@@ -269,7 +264,6 @@ func set_effect_texture():
 #		nine_patch_rect.custom_minimum_size.x = 250
 #		nine_patch_rect.custom_minimum_size.y = 18
 		main_interface.LivePreview.notify_global_variable_change("note_effect_texture")
-
 		return
 #	var image = Image.new()
 #	var err = image.load(GlobalVariables.note_effect_texture[str(number)])
