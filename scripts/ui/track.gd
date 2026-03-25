@@ -35,7 +35,6 @@ var main_interface: Control
 func _ready():
 	main_interface = get_tree().get_nodes_in_group("MainInterface")[0]
 	set_note_texture()
-	nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
 	await get_tree().process_frame
 	if number % 2 == 1:
 		color_rect.color = Color("#eee3ff")
@@ -246,6 +245,7 @@ func set_note_texture():
 	# # When path is null
 	else:
 		push_warning("note texture path is null!")
+		nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
 		return
 
 
