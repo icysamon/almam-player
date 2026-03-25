@@ -161,8 +161,15 @@ func load_settings(path):
 #OTHER
 #------------------------------------------------------------------------|
 
-func _ready():
-	await get_tree().create_timer(0.1).timeout
+
+func _process(_delta):
+	if Input.is_action_just_pressed("fullscreen"):
+		if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		else:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+			
+func main_interface_ready():
 	if not FileAccess.file_exists(default_settings_path):
 		get_tree().get_nodes_in_group("MainInterface")[0].update_sliders()
 		await get_tree().create_timer(0.1).timeout
@@ -172,11 +179,4 @@ func _ready():
 	load_other_settings()
 	load_settings(loaded_settings_path)
 	get_tree().get_nodes_in_group("MainInterface")[0].update_sliders()
-
-
-func _process(delta):
-	if Input.is_action_just_pressed("fullscreen"):
-		if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
-			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
-		else:
-			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	pass

@@ -41,6 +41,8 @@ func _ready():
 #	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 #	update_sliders()
 
+	GlobalVariables.main_interface_ready()
+
 
 func update_sliders():
 	note_size_slider.value = GlobalVariables.note_size
