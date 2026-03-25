@@ -224,36 +224,29 @@ func apply_dont_color():
 
 
 func set_note_texture():
-	var nt = GlobalVariables.note_texture.get(str(number))
-	match nt:
-		"res://assets/images/note.png":
-			nine_patch_rect.texture = default_texture
-			nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
-			#nine_patch_rect.custom_minimum_size.x = 250
-			nine_patch_rect.custom_minimum_size.y = 18
-			return
-		"res://assets/images/note_staccato.png":
-			nine_patch_rect.texture = default_texture
-			nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
-			#nine_patch_rect.custom_minimum_size.x = 250
-			nine_patch_rect.custom_minimum_size.y = 18
-			return
-		null:
-			nine_patch_rect.texture = default_texture
-			nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
-			nine_patch_rect.custom_minimum_size.y = 18
-			return
-	var image
-	if str(nt).begins_with("res://"):
-		image = load(nt)
-	else:
-		image = Image.load_from_file(nt)
-		
-	if image:
+	var image: Image
+	var note_texture_path = str(GlobalVariables.note_texture.get(str(number)))
+	
+	# When path is res://
+	if note_texture_path.begins_with("res://"):
+		nine_patch_rect.texture = load(note_texture_path)
+		nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
+		#nine_patch_rect.custom_minimum_size.x = 250
+		nine_patch_rect.custom_minimum_size.y = 18
+		return
+	# When path is user://
+	elif (note_texture_path != "<null>"):
+		image = Image.load_from_file(note_texture_path)
 		nine_patch_rect.texture = ImageTexture.create_from_image(image)
 		nine_patch_rect.custom_minimum_size = nine_patch_rect.texture.get_size()
-
-	main_interface.LivePreview.notify_global_variable_change("note_texture")
+		#nine_patch_rect.custom_minimum_size.x = 250
+		nine_patch_rect.custom_minimum_size.y = 18
+		main_interface.LivePreview.notify_global_variable_change("note_texture")
+		return
+	# # When path is null
+	else:
+		push_warning("note texture path is null!")
+		return
 
 
 func set_effect_texture():
