@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dd3ddrigclglg" path="res://assets/sprites/note00.png" id="5_fwyp1"]
 
 [sub_resource type="Animation" id="Animation_hvmtr"]
-length = 0.001
+length = 0.93333334
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -63,7 +63,6 @@ script = ExtResource("2_soo8j")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=949905013]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 64)
 layout_mode = 2
 color = Color(0.933333, 0.890196, 1, 1)
 

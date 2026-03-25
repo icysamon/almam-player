@@ -44,7 +44,7 @@ func _ready():
 	animation_player.play("start")
 
 
-func _physics_process(_delta):
+func _process(_delta):
 	color_picker_button.color = lerp(color_picker_button.color, color, 0.1)
 	nine_patch_rect.self_modulate = lerp(nine_patch_rect.self_modulate, color, 0.1)
 	if not GlobalVariables.dont_color[str(number)]:
