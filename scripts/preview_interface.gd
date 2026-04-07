@@ -10,6 +10,7 @@ var pause_status_before_seek_ : bool
 ## don't work :(
 var queued_seek_value_ : float = -1
 
+
 func _process(_delta):
 	# Update seek slider and audio player
 	if !get_tree().paused:

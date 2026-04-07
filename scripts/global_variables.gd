@@ -171,7 +171,7 @@ func _process(_delta):
 			
 func main_interface_ready():
 	if not FileAccess.file_exists(default_settings_path):
-		get_tree().get_nodes_in_group("MainInterface")[0].update_sliders()
+		#get_tree().get_nodes_in_group("MainInterface")[0].update_sliders()
 		await get_tree().create_timer(0.1).timeout
 		
 		save_settings(default_settings_path)

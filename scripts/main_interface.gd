@@ -39,7 +39,6 @@ func _ready():
 #	ProjectSettings.set_setting("display/window/stretch/mode", "canvas_items")
 #	print(ProjectSettings.get_setting("display/window/stretch/mode"))
 #	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
-#	update_sliders()
 
 	GlobalVariables.main_interface_ready()
 

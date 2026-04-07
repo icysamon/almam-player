@@ -316,7 +316,7 @@ func start():
 			await get_tree().create_timer(GlobalVariables.audio_offset).timeout
 			
 		
-	$AudioStreamPlayer.play()
+	#$AudioStreamPlayer.play()
 	$AudioStreamPlayer2.play()
 	
 	$stop.start()
